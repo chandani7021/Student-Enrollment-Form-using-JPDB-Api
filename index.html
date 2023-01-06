@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form using JPDB</title>
+    <!---CSS Bootstrap-->
+    <link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--JQuery Library-->
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!--LAtest Compiled Javascript-->
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    
+</head>
+<body>
+    <script type="'text/javascript" src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    
+    
+    <br />
+    <div class = "container">
+        <div class = 'page-header text-center'>
+            <h2>Student Enrollment Form using JPDB</h2>
+        </div>
+   
+        <form id="studentForm" method="get">
+            <div class="form-group">
+                <label>Student Roll-NO</label>
+                <input type="text" id="studentid" class="form-control" onchange="getStudent()">
+            </div>
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="studentname" class="form-control" >
+            </div>
+
+            <div class="Class">
+                <label>Student Roll-NO</label>
+                <input type="text" id="studentclass" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Birth Date</label>
+                <input type="date" id="studentbirth" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Address</label>
+                <input type="text" id="studentaddress" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label>Enrollment Date</label>
+                <input type="date" id="studentenroll" class="form-control">
+            </div>
+
+            <div class="form-group text-center">
+                <button type="button" class="btn btn-lg btn-primary" id="save" onclick="saveData()" disabled>Save</button>
+                <button type="button" class="btn btn-lg btn-primary" id="update" onclick="updateData()" disabled>Update</button>
+                <button type="button" class="btn btn-lg btn-primary" id="reset" onclick="resetForm()" disabled>Reset</button>
+            </div>
+
+        </form>
+    </div>
+    <script type="'text/javascript" src="/js/index.js"></script>
+
+</body>
+</html>
